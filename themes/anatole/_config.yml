@@ -16,13 +16,16 @@ facebook:
 duoshuo: 
 disqus: 
 gentie: 
-# Valine comments https://valine.js.org
-valine: 
-  enable: true # if you want use valine, please set enable: true
-  appid:  zdN4S5P4rfRUY13ZmRaKuQMj-gzGzoHsz # your leancloud appid
-  appkey:  T64CwVqv5rXWUQUnGarOEUbm # your leancloud appkey
-  notify: false # true/false:mail notify !!!Test,Caution. https://github.com/xCss/Valine/wiki/Valine-%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E4%B8%AD%E7%9A%84%E9%82%AE%E4%BB%B6%E6%8F%90%E9%86%92%E8%AE%BE%E7%BD%AE
-  verify: false # true/false:verify code
-  avatar: mm # avatar style https://github.com/xCss/Valine/wiki/avatar-setting-for-valine
-  # 评论框占位文案按站点语言取自 themes/anatole/languages/<language>.yml 的 comment_placeholder
 
+# 评论系统：giscus（基于 GitHub Discussions；前端脚本从 giscus.app 加载，无后端、无数据库）
+# 每个页面按 mapping 映射到一条 discussion；中英站路径不同，因此各自独立讨论。
+giscus:
+  enable: true
+  repo: Qaaxaap/qaaxaap-blog
+  repo_id: R_kgDOQmJQaQ
+  category: Announcements
+  category_id: DIC_kwDOQmJQac4DGFWj
+  mapping: pathname      # pathname | url | title | og:title | specific
+  reactions_enabled: 1
+  input_position: bottom
+  theme: light

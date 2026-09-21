@@ -54,80 +54,21 @@ if theme.youyan
 
         })();
 
-if theme.valine
-    if theme.valine.enable == true
-        a#comments
-        #vcomments(style="margin:0 30px;")
-        
-        //- 使用新版 Valine 1.5.3（已内置 LeanCloud SDK）
-        script.
-          // 动态加载 Valine
-          (function() {
-            // 配置对象
-            var config = {
-              el: '#vcomments',
-              appId: '#{theme.valine.appid}',
-              appKey: '#{theme.valine.appkey}',
-              // 关键：必须添加 serverURLs
-              serverURLs: '#{theme.valine.serverURLs || "https://zdn4s5p4.lc-cn-n1-shared.com"}',
-              notify: #{theme.valine.notify} || false,
-              verify: #{theme.valine.verify} || false,
-              lang: '#{config.language || "en"}',
-              placeholder: '#{__("comment_placeholder")}',
-              path: window.location.pathname,
-              avatar: '#{theme.valine.avatar}',
-              visitor: true,
-              highlight: true,
-              recordIP: true
-            };
-            
-            // 加载 Valine
-            function loadValine() {
-              // 检查是否已加载
-              if (typeof Valine !== 'undefined') {
-                initValine();
-                return;
-              }
-              
-              // 使用官方 CDN
-              var script = document.createElement('script');
-              script.src = 'https://cdn.jsdelivr.net/npm/valine@1.5.3/dist/Valine.min.js';
-              script.async = true;
-              
-              script.onload = function() {
-                console.log('Valine 1.5.3 加载成功');
-                setTimeout(initValine, 100);
-              };
-              
-              script.onerror = function() {
-                console.warn('主 CDN 失败，尝试备用源');
-                var backupScript = document.createElement('script');
-                backupScript.src = 'https://unpkg.com/valine@1.5.3/dist/Valine.min.js';
-                backupScript.onload = initValine;
-                document.head.appendChild(backupScript);
-              };
-              
-              document.head.appendChild(script);
-            }
-            
-            function initValine() {
-              if (typeof Valine === 'undefined') {
-                console.error('Valine 未加载成功');
-                return;
-              }
-              
-              try {
-                new Valine(config);
-                console.log('Valine 初始化成功');
-              } catch (error) {
-                console.error('Valine 初始化失败:', error);
-              }
-            }
-            
-            // 页面加载完成后执行
-            if (document.readyState === 'loading') {
-              document.addEventListener('DOMContentLoaded', loadValine);
-            } else {
-              loadValine();
-            }
-          })();
+if theme.giscus && theme.giscus.enable
+    a#comments
+    - var giscusLang = { 'zh-cn': 'zh-CN', 'zh-tw': 'zh-TW' }[config.language] || 'en'
+    script(src="https://giscus.app/client.js"
+        data-repo=theme.giscus.repo
+        data-repo-id=theme.giscus.repo_id
+        data-category=theme.giscus.category
+        data-category-id=theme.giscus.category_id
+        data-mapping=theme.giscus.mapping || 'pathname'
+        data-strict="0"
+        data-reactions-enabled=theme.giscus.reactions_enabled || '1'
+        data-emit-metadata="0"
+        data-input-position=theme.giscus.input_position || 'bottom'
+        data-theme=theme.giscus.theme || 'light'
+        data-lang=giscusLang
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async)

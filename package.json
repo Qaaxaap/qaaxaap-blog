@@ -13,7 +13,7 @@
     "server": "hexo server --config _config.yml,_config.en.yml --output .hexo-db/en"
   },
   "hexo": {
-    "version": "8.1.1"
+    "version": "8.1.2"
   },
   "dependencies": {
     "hexo": "^8.1.2",
@@ -27,7 +27,6 @@
     "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",
     "hexo-theme-fluid": "^1.9.9",
-    "hexo-theme-landscape": "^1.0.0",
-    "valine": "^1.5.3"
+    "hexo-theme-landscape": "^1.0.0"
   }
 }
