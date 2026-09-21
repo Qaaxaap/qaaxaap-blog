@@ -1,8 +1,16 @@
 #.DS_Store
 #Thumbs.db
-#db.json
 #*.log
 node_modules/
 #public/
 #.deploy*/
-#_multiconfig.yml
+
+# Hexo 运行产物
+db.json
+_multiconfig.yml
+.hexo-db/
+
+# Vim 撤销/交换/备份文件
+*.un~
+*.sw?
+*~
