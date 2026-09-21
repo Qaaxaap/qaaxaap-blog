@@ -3,10 +3,14 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "hexo generate",
-    "clean": "hexo clean",
+    "build": "npm run build:en && npm run build:zh",
+    "build:en": "hexo clean --config _config.yml,_config.en.yml --output .hexo-db/en && hexo generate --config _config.yml,_config.en.yml --output .hexo-db/en",
+    "build:zh": "hexo clean --config _config.yml,_config.zh.yml --output .hexo-db/zh && hexo generate --config _config.yml,_config.zh.yml --output .hexo-db/zh",
+    "clean": "hexo clean --config _config.yml,_config.en.yml --output .hexo-db/en && hexo clean --config _config.yml,_config.zh.yml --output .hexo-db/zh",
     "deploy": "hexo deploy",
-    "server": "hexo server"
+    "new": "hexo new --config _config.yml,_config.en.yml --output .hexo-db/en",
+    "new:zh": "hexo new --config _config.yml,_config.zh.yml --output .hexo-db/zh",
+    "server": "hexo server --config _config.yml,_config.en.yml --output .hexo-db/en"
   },
   "hexo": {
     "version": "8.1.1"

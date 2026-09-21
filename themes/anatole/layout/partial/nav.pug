@@ -2,24 +2,27 @@
   .nav
     li
       if is_home()
-        a.current(href="/")= __('Home')					
+        a.current(href=url_for('/'))= __('Home')
       else
-        a(href="/")= __('Home')	
+        a(href=url_for('/'))= __('Home')
     li
       if is_current('about')
-        a.current(href="/about")= __('About')			
+        a.current(href=url_for('about'))= __('About')
       else
-        a(href="/about")= __('About')
+        a(href=url_for('about'))= __('About')
     li
       if is_archive()
-        a.current(href="/archives")= __('Archive')
+        a.current(href=url_for('archives'))= __('Archive')
       else
-        a(href="/archives")= __('Archive')
+        a(href=url_for('archives'))= __('Archive')
     li
       if is_current('links')
-        a.current(href="/links")= __('Links')					
+        a.current(href=url_for('links'))= __('Links')
       else
-        a(href="/links")= __('Links')		
+        a(href=url_for('links'))= __('Links')
+    if config.alt_lang
+      li
+        a.lang-switch(href=page.alt_url || config.alt_lang.root)= config.alt_lang.label
   .information
     .back_btn
       li

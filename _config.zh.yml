@@ -1,0 +1,23 @@
+# 中文站配置（子路径 /zh/）
+## 与 _config.yml 合并使用：
+##   npx hexo generate --config _config.yml,_config.zh.yml
+
+# Site
+title: Qaaxaap
+subtitle: ''
+description: ''
+keywords:
+language: zh-cn
+
+# URL
+url: https://blog.qaaxaap.living
+root: /zh/
+
+# Directory
+source_dir: source/zh
+public_dir: public/zh
+
+# 语言切换入口：主题顶部导航用它渲染「切到另一种语言」的链接。
+alt_lang:
+  label: EN
+  root: /

@@ -1,0 +1,25 @@
+# 英文站配置（默认语言，根路径 /）
+## 与 _config.yml 合并使用：
+##   npx hexo generate --config _config.yml,_config.en.yml
+
+# Site
+title: Qaaxaap
+subtitle: ''
+description: ''
+keywords:
+language: en
+
+# URL
+url: https://blog.qaaxaap.living
+root: /
+
+# Directory
+source_dir: source/en
+public_dir: public
+
+# 语言切换入口：主题顶部导航用它渲染「切到另一种语言」的链接。
+#   root  —— 对方语言站点根路径
+#   label —— 该链接显示的文字
+alt_lang:
+  label: 中文
+  root: /zh/
