@@ -8,8 +8,8 @@
     "build:zh": "hexo clean --config _config.yml,_config.zh.yml --output .hexo-db/zh && hexo generate --config _config.yml,_config.zh.yml --output .hexo-db/zh",
     "clean": "hexo clean --config _config.yml,_config.en.yml --output .hexo-db/en && hexo clean --config _config.yml,_config.zh.yml --output .hexo-db/zh",
     "deploy": "hexo deploy",
-    "new": "hexo new --config _config.yml,_config.en.yml --output .hexo-db/en",
-    "new:zh": "hexo new --config _config.yml,_config.zh.yml --output .hexo-db/zh",
+    "new": "hexo new --config _config.yml,_config.en.yml",
+    "new:zh": "hexo new --config _config.yml,_config.zh.yml",
     "server": "hexo server --config _config.yml,_config.en.yml --output .hexo-db/en"
   },
   "hexo": {
