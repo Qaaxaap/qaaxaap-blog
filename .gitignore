@@ -17,3 +17,6 @@ _multiconfig.yml
 
 # plainva 编辑器的备份/工作区
 .plainva/
+
+# Obsidian vault 状态（编辑器设置与窗口布局，不是站点内容）
+.obsidian/
