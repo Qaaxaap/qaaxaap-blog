@@ -1,6 +1,8 @@
-#.DS_Store
-#Thumbs.db
-#*.log
+# 系统与编辑器垃圾文件
+.DS_Store
+Thumbs.db
+*.log
+
 node_modules/
 #public/
 #.deploy*/
