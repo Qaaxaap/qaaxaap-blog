@@ -103,13 +103,17 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: anatole
 
+# Archive pages (hexo-generator-archive)
+## 这几项原来缩进写错了：archive_generator 变成了 deploy 的子键，per_page / yearly /
+## monthly / daily 散落在顶层，所以从未生效——归档一直跑在插件默认值上（按年 + 按月、
+## 每页 10 条）。这里显式写出来，效果与之前完全相同，但以后想改有据可依。
+archive_generator:
+  per_page: 10
+  yearly: true
+  monthly: true
+  daily: false
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
-
-  archive_generator:
-  per_page: 0
-  yearly: false
-  monthly: false
-  daily: false
