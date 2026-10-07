@@ -1,12 +1,12 @@
 ---
-title: When Ability Cannot Be Verified
+title: The Next Ability Standard in the Age of AI?
 date: 2026-09-24 20:56:59
 tags:
-    - Personal
-    - Essay
-slug: when-ability-cannot-be-verified
+    - AI
+    - Society
+slug: next-ability-standard
 lang: en
-alt_url: /zh/2026/09/24/当能力无法被验证/
+alt_url: /zh/2026/09/24/AI时代的下一个能力标准？/
 summary: An inquiry into AI, labour, institutions, and the shifting centre of value.
 ---
 

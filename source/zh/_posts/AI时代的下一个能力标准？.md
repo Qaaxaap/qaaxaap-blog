@@ -1,10 +1,11 @@
 ---
-title: 当能力无法被验证
+title: AI 时代的下一个能力标准？
 date: 2026-09-24 20:56:59
 tags:
-    - 随笔
+    - 人工智能
+    - 社会观察
 lang: zh-cn
-alt_url: /2026/09/24/when-ability-cannot-be-verified/
+alt_url: /2026/09/24/next-ability-standard/
 summary: 一份关于人工智能、劳动、制度与价值重心的推演。
 ---
 
