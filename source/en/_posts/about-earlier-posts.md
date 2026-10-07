@@ -7,7 +7,7 @@ tags:
 slug: about-earlier-posts
 lang: en
 alt_url: /zh/2026/09/23/关于以前那些文章/
-summary: The old posts are outdated and I'm not deleting them, plus a short note on where things stand.
+summary: The old posts are outdated, so the self-introduction went first, plus a short note on where things stand.
 ---
 
 I went through the old posts on this blog over the last couple of days. Almost none of them hold up.
@@ -22,9 +22,11 @@ Over the summer I went to Tsinghua for a youth AI summer camp organized by Shing
 
 The contest write-ups don't count as outdated — they were only ever that day's mood, and never pretended to be anything else.
 
-I'm not deleting the old posts.
+~~I'm not deleting the old posts.~~
 
-Deleting them would be like editing an epitaph — this blog is literally called Digital Epitaph, and a tombstone shouldn't keep only the good-looking parts. Shallow, wrong, sentimental — that is genuinely how I wrote back then. The originals stay; this note in front of them is enough.
+~~Deleting them would be like editing an epitaph — this blog is literally called Digital Epitaph, and a tombstone shouldn't keep only the good-looking parts. Shallow, wrong, sentimental — that is genuinely how I wrote back then. The originals stay; this note in front of them is enough.~~
+
+Then again, delete it. Git history is right there if anyone wants it. The self-introduction went first; the rest can wait.
 
 If I feel like it later I might add a few notes pointing out where I went wrong; not adding them doesn't matter either.
 
