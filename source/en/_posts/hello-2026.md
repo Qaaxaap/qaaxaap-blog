@@ -23,7 +23,7 @@ AB dumb problems, skipped
 
 120 min hey what the hell, why does it keep RE on #1, mysterious array out of bounds
 
-128 min whatever, starting to debug, continue the binary search code (remember this, it's going to come up later)
+128 min whatever, starting to debug, continue the binary search code
 
 148 min ugh I give up, I mixed up the array names, ah ah ah, WA on #1
 
@@ -35,7 +35,7 @@ AB dumb problems, skipped
 
 180 min+1s submit! aaaaah I was one second over and didn't get it in
 
-I'm dead
+Hold it together.
 
 Fucking CF, never playing again (for real)
 
