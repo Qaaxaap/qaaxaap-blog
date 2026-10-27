@@ -11,4 +11,6 @@ Tuack-ng 大神 - [Pulsar](https://pulsar33550336.github.io/)
 
 纯自己建站大神 - [Sci_qud](https://wsq127.top)
 
+观鸟大师 - [Vesperon](https://blog.vesperon.online)
+
 [本项目 github 仓库地址](https://github.com/951753yyswys/qaaxaap-blog)

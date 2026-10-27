@@ -11,4 +11,6 @@ Tuack-ng master - [Pulsar](https://pulsar33550336.github.io/)
 
 Fully self-hosted master - [Sci_qud](https://wsq127.top)
 
+Birdwatching master - [Vesperon](https://blog.vesperon.online)
+
 [GitHub repository of this project](https://github.com/951753yyswys/qaaxaap-blog)
